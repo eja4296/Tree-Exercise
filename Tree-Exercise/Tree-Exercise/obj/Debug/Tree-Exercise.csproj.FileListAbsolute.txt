@@ -1,0 +1,7 @@
+D:\NeuroScouting\Tree-Exercise\Tree-Exercise\Tree-Exercise\bin\Debug\Tree-Exercise.exe.config
+D:\NeuroScouting\Tree-Exercise\Tree-Exercise\Tree-Exercise\bin\Debug\Tree-Exercise.exe
+D:\NeuroScouting\Tree-Exercise\Tree-Exercise\Tree-Exercise\bin\Debug\Tree-Exercise.pdb
+D:\NeuroScouting\Tree-Exercise\Tree-Exercise\Tree-Exercise\obj\Debug\Tree-Exercise.csprojResolveAssemblyReference.cache
+D:\NeuroScouting\Tree-Exercise\Tree-Exercise\Tree-Exercise\obj\Debug\Tree-Exercise.csproj.CoreCompileInputs.cache
+D:\NeuroScouting\Tree-Exercise\Tree-Exercise\Tree-Exercise\obj\Debug\Tree-Exercise.exe
+D:\NeuroScouting\Tree-Exercise\Tree-Exercise\Tree-Exercise\obj\Debug\Tree-Exercise.pdb
