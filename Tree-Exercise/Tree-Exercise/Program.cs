@@ -14,7 +14,7 @@ namespace Tree_Exercise
     {
         static void Main(string[] args)
         {
-            
+            Console.WindowWidth *= 2;
 
             // Attributes
             Tree tree;
@@ -24,6 +24,7 @@ namespace Tree_Exercise
 
             // Header
             Console.WriteLine("TREE-EXERCISE");
+
 
             // Main loop
             // Take user input for number of Tree levels and create Tree
@@ -43,18 +44,19 @@ namespace Tree_Exercise
 
                 // Parse user input to get integer value
                 bool inputParsed = int.TryParse(inputStr, out inputInt);
-                if (inputParsed == true)
+                if (inputParsed == false || inputInt < 1)
+                {
+                    // Provide error feedback if input is not valid
+                    Console.WriteLine("Input not valid. Enter an integer greater than 0.");
+                    continue;
+                }
+                // Otherwise if the input was an integer, create the tree
+                else
                 {
                     // Create tree based on levels
                     Console.WriteLine("Creating tree with " + inputInt + " levels.");
                     tree = new Tree();
                     tree.BuildTree(inputInt);
-                }
-                else
-                {
-                    // Provide error feedback
-                    Console.WriteLine("Input not valid. Enter Integer.");
-                    continue;
                 }
 
                 Console.WriteLine();

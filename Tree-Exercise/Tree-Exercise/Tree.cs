@@ -60,6 +60,8 @@ namespace Tree_Exercise
             // Track current level of tree
             int currentLevel = 0;
 
+            string levelString = "";
+
             // Loop until all levels have been created
             while(currentLevel < levels)
             {
@@ -135,9 +137,19 @@ namespace Tree_Exercise
                     newLevelNodes.Add(leftChild);
                     newLevelNodes.Add(rightChild);
 
-                    // Print the current node
-                    currentLevelNodes[i].Print();
+                    // Update tree output
+                    levelString += " - " + currentLevelNodes[i].Key + " - ";
                 }
+
+                // Format tree print to be centered
+                if((Console.WindowWidth - levelString.Length) / 2 > 0)
+                {
+                    Console.SetCursorPosition((Console.WindowWidth - levelString.Length) / 2, Console.CursorTop);
+                }
+                Console.WriteLine(levelString);
+
+                // Reset the level string for the next level of the tree
+                levelString = "";
 
                 // Add space between tree levels
                 Console.WriteLine();
