@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Tree_Exercise
 {
     // Tree class
+    // Create tree of nodes
     class Tree
     {
         // Attributes
